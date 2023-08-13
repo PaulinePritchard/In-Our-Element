@@ -1,0 +1,201 @@
+p1 {
+    font-family: Courier;
+    font-size: 300%;
+}
+
+p2 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Tangerine', cursive;
+    font-size: xx-large;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    
+}
+
+div.background {
+    background: url(Sand2.jpg);
+    border: 4px solid rgb(235, 83, 17);
+  }
+  
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+  
+  div.transbox p {
+    margin: 10%;
+    font-weight: bold;
+    color: #000000;
+  }
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: rgb(157, 181, 116);
+    font-family:Verdana;
+    font-weight: 300;
+    font-size: large;
+}
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #ea631f;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    
+  }
+
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: auto;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Slideshow Gallery */
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "Adventuring.";
+    font-family: Courier;
+    font-size: 150%;
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+/* Flex container for 5 Wells of Wellbeing */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-family: Courier;
+  font-size: large;
+  background-color: rgb(157, 181, 116);
+  text-align: center;
+  padding: 60px;
+}
+
+/* Taken directly from Csaba Kissi's post. Check against code from session on responsiveness
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+    font-size: medium;
+  }
+}
+
+* {box-sizing:border-box}
+
+
+
+    
