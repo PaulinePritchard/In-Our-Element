@@ -1,5 +1,5 @@
 #logo {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
     color: white;
     text-align: left;
@@ -9,8 +9,9 @@
 }
 
 #menu {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    font-variant: small-caps;
     list-style-type: none;
     list-style-position: outside;
     text-align: right;
@@ -40,7 +41,6 @@ a:visited {
 a:hover {
     color: green;
     text-decoration: underline;
-    text-decoration-style: wavy;
 }
 header {
     background-color: orange;
@@ -59,42 +59,125 @@ body {
 }
 
 h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
-    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
     color: #C2B38A;
     padding: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: darkorange;
-    width: 400px;
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #C2B38A;
     padding: 20px;
-    margin-left: 20px;
-    line-height: 30px;
 }
+
+#p1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: darkorange;
+    padding: 20px;
+    line-height: 40px;
+}
+
+#p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: darkorange;
+    padding: 25px;
+    line-height: 40px;
+}
+
+#p3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: darkorange;
+    padding: 20px;
+    margin-left: 40px;
+    line-height: 40px;
+    width: 400px;
+}
+
 #section1 {
     display: flex;
     flex-direction: row;
+    margin: 50px;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: #fcf7eb;
 }
-
-/*.images {
+#main {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+#section2 {
+    background-color: #fcf7eb;
+    width: 30%;
+    padding: 25px;
+    align-content: left;
+    justify-content: space-evenly;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcf7eb;
+    width: 25%;
+    padding: 25px;
+    align-content: left;
+    justify-content: space-evenly;
+}
+#mainimg{
+    max-width: 100%;
     height: 400px;
+}
+#p4 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blanchedalmond;
+    margin-top: 20px;
+    padding: 10px;
+    word-wrap: normal;
+}
+
+#section4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcf7eb;
+    width: 25%;
+    padding: 25px;
+    margin-right: 20px;
+    align-content: left;
+    justify-content: space-evenly;
+
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 500px;
     justify-content: left;
     overflow: scroll;
-} */
+}
+
+.button {
+    background-color: rgb(219, 197, 170);
+    padding: 14px 40px;
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+}
 
 
 footer {
     background-color: white;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: darkolivegreen;
     margin: 0;
