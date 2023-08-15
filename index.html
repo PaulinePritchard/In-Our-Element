@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As the site needs to be responsive needs the meta tags for page responsiveness (the one above was auto populated so maybe use that one) -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- SEO additons -->
+    <meta name="description" content="A CFG web project for the In Our Element (group 2)">
+    <meta name="keywords" content="cfg, project, web site, hobbies, hobby">
+    <meta name="author" content="Pauline Pritchard">
+
+    <title>In Our Element | Welcome</title>
+
+    <link rel="stylesheet" href="./css/PaulinePr_style.css">
+
+    <script>
+        function submitemail() {
+          document.getElementById("subscribeForm").submit();
+        }
+        </script>
+    </head>
+
+
+<body>
+    <!-- This is the header section, introductory items -->
+    <header>
+        <div class="container">
+            <div id="navbar">
+                <h1>In Our Element Hobbies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Change with group names in alphabetical order Fl He Je Pa Te -->
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="elem-page.html">Adventure</a></li>
+                    <li><a href="jessicahtml.html">Coffee</a></li>
+                    <li><a href="fleurcolvile.html">Gardening</a></li>
+                    <li><a href="PaulinePr_travel.html">Travel</a></li>
+                    <li><a href="index.html">Reading</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="titletextblock vertical-center horizontal-center">
+            <h1>Welcome to the In Our Element Hobbies Site</h1>
+            <p><strong>A site dedicated to showcasing different hobbies that people do.<br> To inspire you with ideas for new hobbies or to learn how to do.</strong></p>
+        </div>
+    </section>
+ 
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to the monthly newsletter</h1>
+            <form id="subscribeForm" action="https://formsubmit.co/163410e0128394cc764d1e99cbc7515c" method="POST">
+                <input type="email" placeholder="Enter email" name="emailaddress">
+                <button type="button" onclick="submitemail()" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <a href="elem-page.html">
+                <img src="./images/PaulinePr_Adventure.jpg" alt="Image of cup with the word adventure">
+                </a>
+                <h3>Adventuring</h3>
+                <h3>Editor: Helen Shaw</h3>
+                <p><strong>Adventure</strong>...the pursuit of the extraordinary, a journey into the unknown that fuels the spirit with excitement, challenges and growth.</p>
+            </div>
+
+            <div class="box">
+                <a href="jessicahtml.html">
+                <img src="./images/PaulinePr_Coffee.jpg" alt="Image listing coffee and tea beverages">
+                 </a>
+                <h3>Coffee</h3>
+                <h3>Editor: Jess Peet</h3>
+                <p><strong>Coffee</strong>...the aromatic elixir that awakens the senses and fuels creativity, one cup at a time.</p>
+            </div>
+
+            <div class="box">
+                <a href="fleurcolvile.html">
+                <img src="./images/PaulinePr_Gardening.jpg" alt="Image of a garden water can watering plants">
+                </a>
+                <h3>Gardening</h3>
+                <h3>Editor: Fleur Colville</h3>
+                <p><strong>Gardening</strong>...the art of nurturing life, where patience and care cultivate beauty and sustenance.</p>
+            </div>
+            <div class="box">
+                <a href="PaulinePr_travel.html">
+                <img src="./images/PaulinePr_Travel.jpg" alt="Image of main entrance for Lime Street train station in Liverpool">
+                </a>
+                <h3>Travel</h3>
+                <h3>Editor: Pauline Pritchard</h3>
+                <p><strong>Travel</strong>...the passport to new perspectives, cultures, and memories that enrich the tapestry of life.</p>
+            </div>
+            <div class="box">
+                <a href="index.html">
+                <img src="./images/PaulinePr_Reading.jpg" alt="Image of a pile of stacked books">
+                </a>
+                <h3>Reading</h3>
+                <h3>Editor: Temi Oluwole</h3>
+                <p><strong>Reading</strong>...a magical journey where words unlock worlds, expand minds and ignite imagination.</p>
+            </div>
+        </div>  
+    </section>
+    
+
+    <!-- sticky -->
+    <script>
+        window.onscroll = function() {myFunction()};
+    
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+    
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+
+    <footer>
+        <p><strong>In Our Element Web Design for CFG Project, Copyright &copy 2023</strong></p>
+    </footer>
+
+</body>
+</html>

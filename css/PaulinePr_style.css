@@ -1,0 +1,253 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    }
+
+.button_1{
+    height: 30px;
+    background: #A3C473;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/* Header */
+header{
+    background: #FF9900;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 60px;
+    border-bottom: #A3C473 3.5px solid;
+}
+
+/* This is the nav bar */
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* Navbar */
+header #navbar{
+    float: left;
+}
+
+header #navbar h1{
+    font-size: 50px;
+    margin: 10px;
+}
+
+header nav{
+    float:right;
+    margin-top: 30px;
+}
+
+/* ADDED STICKY NAV HERE */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+header .highlight, header .current a{
+    color: #000000;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#A3C473;
+    font-weight: bold;
+}
+
+/* Intro */
+#intro{
+    min-height: 350px;
+    background: url('../images/PaulinePr_showcase5.jpg');
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+#intro h1{
+    margin-top: 20PX;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#intro p{
+    font-size: 25px;
+}
+
+.titletextblock{
+    background-color: #FFAD33;
+    color: #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 2.5em;
+}
+
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .horizontal-center{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #FF9900;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 30px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 10px;
+}
+
+#boxes .box{
+    float: left;
+    width: 17%;
+    padding: 24px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 250px;
+}
+
+#boxes h1{
+    font-size: 40px;
+    color: #FFAD33;
+    font-weight: bold;
+}
+
+.cities {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  img {
+    max-width: 90%;
+  }
+  
+  .image {
+    flex-basis: 20%;
+  }
+  
+  .text {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+/* Sidebar */
+aside#sidebar{
+float: right;
+width: 20%;
+margin-top: 10px;
+}
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 5px;
+    color: #ffffff;
+    background: #FF9900;
+    text-align: center;
+}
+
+/* Media Query */
+@media(max-width: 768px){
+    header #navbar,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newletter form,
+    #boxes .box
+    #intro .titletextblock h1,
+    #intro .titletextblock p{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #intro h1{
+        margin-top: 40px;
+    }
+
+    #newsletter .button_1{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
